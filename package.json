@@ -1,5 +1,5 @@
 {
-  "name": "fe-react-data-visualisation",
+  "name": "carbon-intensity",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "http://dan77uk.github.io/fe-react-data-visualisation"
+  "homepage": "http://dan77uk.github.io/carbonIntensity"
 }
