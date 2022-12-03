@@ -3,9 +3,23 @@
   font-size: 1.4rem;
 }
 
+.energy-mix ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
 .energy-mix ul li {
-  padding: 5px 0 5px 45px;
-  border-bottom: solid 1px rgb(233, 233, 233);
+  padding: 20px 20px 20px 55px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(211, 211, 211, 0.5);
+  border: solid 1px rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.energy-mix ul li:hover {
+  box-shadow: 3px 3px 10px rgb(196, 196, 196);
+  border: solid 1px rgb(216, 216, 216);
 }
 
 .energy-mix ul li p {
@@ -17,19 +31,21 @@
 }
 .energy-mix ul li p span {
   font-size: 1.2rem;
-
   text-transform: capitalize;
   font-weight: 600;
 }
-
-.energy-mix ul li div {
+.bar-chart-container {
+  background-color: rgb(237, 241, 239);
+  border-radius: 7px 0 7px 0;
+}
+.energy-mix ul li .bar-chart-container div {
   background-color: rgb(74, 152, 121);
   height: 15px;
   border-radius: 7px 0 7px 0;
 }
 
 .energy-mix ul li {
-  background-position: 0%;
+  background-position: 10px center;
   background-repeat: no-repeat;
   background-size: 35px;
 }
