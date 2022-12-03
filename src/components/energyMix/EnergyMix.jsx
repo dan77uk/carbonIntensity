@@ -12,7 +12,9 @@ const EnergyMix = ({ userData }) => {
                   {source.fuel}
                   <span>{source.perc}%</span>
                 </p>
-                <div style={{ width: `${source.perc}%` }}></div>
+                <div className="bar-chart-container">
+                  <div style={{ width: `${source.perc}%` }}></div>
+                </div>
               </li>
             );
           }
