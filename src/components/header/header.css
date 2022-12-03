@@ -1,0 +1,9 @@
+header {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  color: rgb(79, 110, 49);
+}

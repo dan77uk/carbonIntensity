@@ -1,0 +1,70 @@
+.energy-mix h5 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.energy-mix ul li {
+  padding: 5px 0 5px 45px;
+  border-bottom: solid 1px rgb(233, 233, 233);
+}
+
+.energy-mix ul li p {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.energy-mix ul li p span {
+  font-size: 1.2rem;
+
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.energy-mix ul li div {
+  background-color: rgb(74, 152, 121);
+  height: 15px;
+  border-radius: 7px 0 7px 0;
+}
+
+.energy-mix ul li {
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: 35px;
+}
+.energy-mix ul .nuclear {
+  background-image: url("../../../public/icons/nuclear.png");
+}
+
+.energy-mix ul .wind {
+  background-image: url("../../../public/icons/wind.png");
+}
+
+.energy-mix ul .solar {
+  background-image: url("../../../public/icons/solar.png");
+}
+
+.energy-mix ul .gas {
+  background-image: url("../../../public/icons/gas.png");
+}
+
+.energy-mix ul .hydro {
+  background-image: url("../../../public/icons/hydro.png");
+}
+
+.energy-mix ul .coal {
+  background-image: url("../../../public/icons/coal.png");
+}
+
+.energy-mix ul .biomass {
+  background-image: url("../../../public/icons/biomass.png");
+}
+
+.energy-mix ul .other {
+  background-image: url("../../../public/icons/other.png");
+}
+
+.energy-mix ul .imports {
+  background-image: url("../../../public/icons/imports.png");
+}

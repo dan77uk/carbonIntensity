@@ -1,0 +1,90 @@
+.data-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.data-container article {
+  border: solid 1px rgb(220, 220, 220);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.data-container--carbonInt h5 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.data-container--carbonInt h5 span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(79, 110, 49);
+}
+
+.data-container--carbonInt h5 span span {
+  display: inline;
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.data-container--carbonInt p {
+  border-top: solid 1px rgb(220, 220, 220);
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  padding-top: 15px;
+}
+
+.data-container--carbonInt p span {
+  padding: 3px 10px;
+  border-radius: 15px;
+}
+
+.data-container--carbonInt .high span {
+  background-color: rgb(232, 44, 6);
+  color: rgb(255, 255, 255);
+}
+
+.data-container--carbonInt .moderate span {
+  background-color: rgb(141, 192, 21);
+  color: rgb(255, 255, 255);
+}
+
+.data-container--energy-mix {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.data-container--energy-mix h5 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.data-container--energy-mix p {
+  width: 50%;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.data-container--energy-mix p span {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgb(74, 152, 121);
+}
+
+.data-container--energy-mix p span span {
+  display: inline;
+  font-size: 1rem;
+  margin-left: 5px;
+  color: rgb(69, 69, 69);
+  font-family: "Poppins", "arial", sans-serif;
+  font-weight: 400;
+}

@@ -1,0 +1,20 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Poppins", "arial", sans-serif;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: 20px 20px 40px rgb(211, 211, 211);
+}

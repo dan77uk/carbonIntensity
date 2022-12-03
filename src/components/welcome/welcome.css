@@ -1,0 +1,22 @@
+.welcomeBanner {
+  width: 100%;
+  background: url("../../../public/background.png") no-repeat left bottom;
+  display: flex;
+  align-items: center;
+  padding: 40px 40px;
+  height: 200px;
+}
+
+.welcomeBanner div {
+  width: 100%;
+  text-align: center;
+}
+
+.welcomeBanner h3 {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  background-color: rgba(80, 144, 107, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
