@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/carbonIntensity/static/css/main.1e7f9d0b.css",
+    "main.js": "/carbonIntensity/static/js/main.f3d8d77a.js",
+    "static/media/background.png": "/carbonIntensity/static/media/background.090062c2eeb7c8b1ecc4.png",
+    "static/media/solar.png": "/carbonIntensity/static/media/solar.c6c3f9a7997b30d9a63f.png",
+    "static/media/nuclear.png": "/carbonIntensity/static/media/nuclear.07d8eb6eef55a628b3ef.png",
+    "static/media/coal.png": "/carbonIntensity/static/media/coal.ca5734eb6c10e83429d4.png",
+    "static/media/other.png": "/carbonIntensity/static/media/other.39fcdf5c457520728ed4.png",
+    "static/media/biomass.png": "/carbonIntensity/static/media/biomass.cbb2b192199436e2b5dd.png",
+    "static/media/hydro.png": "/carbonIntensity/static/media/hydro.f3232ea442dc7b5afd9f.png",
+    "static/media/gas.png": "/carbonIntensity/static/media/gas.672faaa5978ff62876bd.png",
+    "static/media/wind.png": "/carbonIntensity/static/media/wind.81306ca77e9b0ef4917c.png",
+    "static/media/imports.png": "/carbonIntensity/static/media/imports.dc887c508cdf578c508b.png",
+    "index.html": "/carbonIntensity/index.html",
+    "main.1e7f9d0b.css.map": "/carbonIntensity/static/css/main.1e7f9d0b.css.map",
+    "main.f3d8d77a.js.map": "/carbonIntensity/static/js/main.f3d8d77a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e7f9d0b.css",
+    "static/js/main.f3d8d77a.js"
+  ]
+}
