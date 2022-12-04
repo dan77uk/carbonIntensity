@@ -1,3 +1,7 @@
+.energy-mix {
+  grid-area: energy-mix-grid;
+}
+
 .energy-mix h5 {
   font-weight: 600;
   font-size: 1.4rem;
@@ -7,6 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  padding: 20px;
 }
 
 .energy-mix ul li {
@@ -26,13 +31,15 @@
   text-transform: capitalize;
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 200;
 }
 .energy-mix ul li p span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: capitalize;
   font-weight: 600;
+  color: rgb(107, 107, 107);
+  margin-left: 10px;
 }
 .bar-chart-container {
   background-color: rgb(237, 241, 239);
@@ -83,4 +90,16 @@
 
 .energy-mix ul .imports {
   background-image: url("../../../public/icons/imports.png");
+}
+
+@media (max-width: 800px) {
+  .energy-mix ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .energy-mix ul {
+    grid-template-columns: 1fr;
+  }
 }

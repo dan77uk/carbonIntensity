@@ -12,7 +12,7 @@ const App = () => {
     <main>
       <Header />
       <Welcome />
-      <Search setUserRegionData={setUserRegionData} />
+      {/* <Search setUserRegionData={setUserRegionData} /> */}
       <Demand userData={userRegionData} />
       <Footer />
     </main>

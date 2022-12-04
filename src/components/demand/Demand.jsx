@@ -18,7 +18,7 @@ const Demand = ({ userData }) => {
         setIntensityIsLoading(false);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err.status);
       });
   }, []);
 
@@ -35,7 +35,7 @@ const Demand = ({ userData }) => {
           setGenerationIsLoading(false);
         })
         .catch((err) => {
-          console.log(err);
+          console.log(err.status);
         });
     }
   }, [userData]);
@@ -84,35 +84,42 @@ const Demand = ({ userData }) => {
 
     return (
       <section className="data-container">
-        <article className="data-container--carbonInt">
-          <h5>
-            National Carbon Intensity
-            <span>
-              {intensity.actual}
-              <span>gCO2/KWh</span>
-            </span>
-          </h5>
-          <p className={intensity.index}>
-            <span>{intensity.index}</span> {intensityWarning(intensity)}
-          </p>
+        <article className="intensity-data-wrapper">
+          <div className="data-container--carbonInt">
+            <h5>National Carbon Intensity</h5>
+            <h6>
+              <span>
+                {intensity.actual}
+                <span>gCO2/KWh</span>
+              </span>
+            </h6>
+
+            <p className={intensity.index}>
+              <span>{intensity.index}</span> {intensityWarning(intensity)}
+            </p>
+          </div>
+
+          <div className="data-container--energy-mix">
+            <h5>{title}</h5>
+            <div>
+              <p>
+                Renewables
+                <span>
+                  {renewableCalc(generation)}
+                  <span>%</span>
+                </span>
+              </p>
+              <p>
+                Low Carbon
+                <span>
+                  {lowCarbonCalc(generation)}
+                  <span>%</span>
+                </span>
+              </p>
+            </div>
+          </div>
         </article>
-        <article className="data-container--energy-mix">
-          <h5>{title}</h5>
-          <p>
-            Renewables
-            <span>
-              {renewableCalc(generation)}
-              <span>%</span>
-            </span>
-          </p>
-          <p>
-            Low Carbon
-            <span>
-              {lowCarbonCalc(generation)}
-              <span>%</span>
-            </span>
-          </p>
-        </article>
+
         <EnergyMix userData={generation} />
       </section>
     );

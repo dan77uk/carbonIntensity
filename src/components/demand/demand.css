@@ -1,45 +1,77 @@
 .data-container {
-  width: 100%;
-  padding: 40px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "intensity-data-wrapper energy-mix-grid";
+  gap: 20px;
 }
 
-.data-container article {
-  border: solid 1px rgb(220, 220, 220);
+.intensity-data-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: intensity-data-wrapper;
+  gap: 10px;
+  padding: 20px;
+}
+
+.data-container--carbonInt,
+.data-container--energy-mix {
+  border: solid 1px;
+  padding: 20px;
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px 0;
+  box-shadow: 3px 3px 10px rgba(211, 211, 211, 0.5);
+  border: solid 1px rgb(255, 255, 255);
 }
 
-.data-container--carbonInt h5 {
-  font-weight: 400;
-  font-size: 1.4rem;
+.data-container--carbonInt {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.data-container--carbonInt h5 span {
+.data-container--carbonInt h5,
+.data-container--energy-mix h5 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: rgb(76, 76, 76);
+}
+
+.data-container--carbonInt h6 {
+  border-right: solid 3px rgb(242, 242, 242);
+  padding-right: 15px;
+}
+
+.data-container--carbonInt h6 span {
   display: block;
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 1;
   font-weight: 600;
   color: rgb(79, 110, 49);
 }
 
-.data-container--carbonInt h5 span span {
-  display: inline;
+.data-container--carbonInt h6 span span {
+  display: block;
   font-size: 0.7rem;
   font-weight: 400;
-  margin-left: 5px;
 }
 
 .data-container--carbonInt p {
-  border-top: solid 1px rgb(220, 220, 220);
   text-transform: capitalize;
-  font-size: 0.8rem;
-  padding-top: 15px;
+  font-size: 0.7rem;
+  padding: 10px;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .data-container--carbonInt p span {
+  display: block;
   padding: 3px 10px;
   border-radius: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
 .data-container--carbonInt .high span {
@@ -52,39 +84,90 @@
   color: rgb(255, 255, 255);
 }
 
-.data-container--energy-mix {
+.data-container--energy-mix div {
+  margin-top: 10px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.data-container--energy-mix h5 {
-  width: 100%;
-  font-weight: 400;
-  font-size: 1.4rem;
-  text-align: center;
-  margin-bottom: 10px;
+  gap: 10px;
 }
 
 .data-container--energy-mix p {
-  width: 50%;
+  width: 100%;
   text-align: center;
+  padding: 10px 0;
   font-size: 0.8rem;
   line-height: 1.2;
+  background: rgb(74, 152, 121);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
 }
 
 .data-container--energy-mix p span {
   display: block;
   font-size: 3rem;
   font-weight: 800;
-  color: rgb(74, 152, 121);
+  color: rgb(255, 255, 255);
 }
 
 .data-container--energy-mix p span span {
   display: inline;
   font-size: 1rem;
   margin-left: 5px;
-  color: rgb(69, 69, 69);
-  font-family: "Poppins", "arial", sans-serif;
+  color: rgb(255, 255, 255);
   font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .data-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intensity-data-wrapper"
+      "energy-mix-grid";
+  }
+
+  .intensity-data-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .data-container--carbonInt h5,
+  .data-container--energy-mix h5 {
+    font-size: 0.9rem;
+  }
+
+  .data-container--carbonInt h6 span {
+    font-size: 2rem;
+  }
+
+  .data-container--carbonInt h6 span span {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+
+  .data-container--carbonInt p {
+    font-size: 0.6rem;
+  }
+
+  .data-container--carbonInt p span {
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+  }
+
+  .data-container--energy-mix p {
+    font-size: 0.7rem;
+    line-height: 1.1;
+  }
+
+  .data-container--energy-mix p span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .intensity-data-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
