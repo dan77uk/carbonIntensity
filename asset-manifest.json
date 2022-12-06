@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/carbonIntensity/static/css/main.2493055d.css",
-    "main.js": "/carbonIntensity/static/js/main.33ee7230.js",
+    "main.css": "/carbonIntensity/static/css/main.0db8bd16.css",
+    "main.js": "/carbonIntensity/static/js/main.759af9b7.js",
     "static/media/background.png": "/carbonIntensity/static/media/background.090062c2eeb7c8b1ecc4.png",
     "static/media/solar.png": "/carbonIntensity/static/media/solar.c6c3f9a7997b30d9a63f.png",
     "static/media/nuclear.png": "/carbonIntensity/static/media/nuclear.07d8eb6eef55a628b3ef.png",
@@ -13,11 +13,11 @@
     "static/media/wind.png": "/carbonIntensity/static/media/wind.81306ca77e9b0ef4917c.png",
     "static/media/imports.png": "/carbonIntensity/static/media/imports.dc887c508cdf578c508b.png",
     "index.html": "/carbonIntensity/index.html",
-    "main.2493055d.css.map": "/carbonIntensity/static/css/main.2493055d.css.map",
-    "main.33ee7230.js.map": "/carbonIntensity/static/js/main.33ee7230.js.map"
+    "main.0db8bd16.css.map": "/carbonIntensity/static/css/main.0db8bd16.css.map",
+    "main.759af9b7.js.map": "/carbonIntensity/static/js/main.759af9b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2493055d.css",
-    "static/js/main.33ee7230.js"
+    "static/css/main.0db8bd16.css",
+    "static/js/main.759af9b7.js"
   ]
 }
