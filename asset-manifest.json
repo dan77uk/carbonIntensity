@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/carbonIntensity/static/css/main.f21181a9.css",
+    "main.css": "/carbonIntensity/static/css/main.076422db.css",
     "main.js": "/carbonIntensity/static/js/main.e9be39f1.js",
     "static/media/background.png": "/carbonIntensity/static/media/background.090062c2eeb7c8b1ecc4.png",
     "static/media/solar.png": "/carbonIntensity/static/media/solar.c6c3f9a7997b30d9a63f.png",
@@ -13,11 +13,11 @@
     "static/media/wind.png": "/carbonIntensity/static/media/wind.81306ca77e9b0ef4917c.png",
     "static/media/imports.png": "/carbonIntensity/static/media/imports.dc887c508cdf578c508b.png",
     "index.html": "/carbonIntensity/index.html",
-    "main.f21181a9.css.map": "/carbonIntensity/static/css/main.f21181a9.css.map",
+    "main.076422db.css.map": "/carbonIntensity/static/css/main.076422db.css.map",
     "main.e9be39f1.js.map": "/carbonIntensity/static/js/main.e9be39f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f21181a9.css",
+    "static/css/main.076422db.css",
     "static/js/main.e9be39f1.js"
   ]
 }
