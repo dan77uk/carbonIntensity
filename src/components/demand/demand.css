@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-areas: "intensity-data-wrapper energy-mix-grid";
+  padding: 40px;
   gap: 20px;
 }
 
@@ -10,7 +11,6 @@
   grid-template-columns: 1fr;
   grid-area: intensity-data-wrapper;
   gap: 10px;
-  padding: 20px;
 }
 
 .data-container--carbonInt,
