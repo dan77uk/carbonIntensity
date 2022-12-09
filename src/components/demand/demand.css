@@ -170,4 +170,8 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .data-container {
+    padding: 20px;
+    gap: 10px;
+  }
 }
