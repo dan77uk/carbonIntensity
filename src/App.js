@@ -2,7 +2,6 @@ import Header from "./components/header/Header";
 import Welcome from "./components/welcome/Welcome";
 import Demand from "./components/demand/Demand";
 import Footer from "./components/footer/Footer";
-import Search from "./components/search/Search";
 import { useState } from "react";
 
 const App = () => {
@@ -10,10 +9,9 @@ const App = () => {
 
   return (
     <main>
-      <Header />
+      <Header setUserRegionData={setUserRegionData} />
       <Welcome />
-      {/* <Search setUserRegionData={setUserRegionData} /> */}
-      <Demand userData={userRegionData} />
+      <Demand userData={userRegionData} setUserRegionData={setUserRegionData} />
       <Footer />
     </main>
   );

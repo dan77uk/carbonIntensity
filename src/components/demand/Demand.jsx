@@ -3,7 +3,7 @@ import axios from "axios";
 import "./demand.css";
 import EnergyMix from "../energyMix/EnergyMix";
 
-const Demand = ({ userData }) => {
+const Demand = ({ userData, setUserRegionData }) => {
   const [intensity, setIntensity] = useState({});
   const [generation, setGeneration] = useState();
   const [title, setTitle] = useState("UK Green Energy");
@@ -120,7 +120,10 @@ const Demand = ({ userData }) => {
           </div>
         </article>
 
-        <EnergyMix userData={generation} />
+        <EnergyMix
+          userData={generation}
+          setUserRegionData={setUserRegionData}
+        />
       </section>
     );
   }

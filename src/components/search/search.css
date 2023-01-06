@@ -1,23 +1,26 @@
 .search-form-container {
-  margin: 20px 40px 0 40px;
-  padding: 20px;
-  background-color: rgb(145, 174, 117);
-  border-radius: 10px;
+  background-color: rgb(237, 237, 237);
+  border-radius: 5px;
   color: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  padding: 10px;
+  margin-bottom: 7px;
 }
 
 .search-form-container h5 {
   font-weight: 400;
-  text-align: center;
+  font-size: 0.6rem !important;
+  color: rgb(63, 63, 63);
 }
 
 .search-form-container select {
   max-width: 100%;
-  background-color: aliceblue;
-  padding: 5px 10px;
+  background-color: rgb(147, 184, 115);
+  color: rgb(250, 250, 250);
+  padding: 4px 10px;
   border-radius: 5px;
+  font-size: 0.7rem;
+  margin: 4px 0 0 0;
+  border: solid 1px rgb(215, 215, 215);
 }

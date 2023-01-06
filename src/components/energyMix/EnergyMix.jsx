@@ -1,8 +1,10 @@
 import "./energyMix.css";
+import Search from "../search/Search";
 
-const EnergyMix = ({ userData }) => {
+const EnergyMix = ({ userData, setUserRegionData }) => {
   return (
     <article className="energy-mix">
+      <Search setUserRegionData={setUserRegionData} />
       <ul>
         {userData.map((source) => {
           return source.perc > 0 ? (

@@ -27,7 +27,7 @@ const Search = ({ setUserRegionData }) => {
   };
   return (
     <section className="search-form-container">
-      <h5>Regional Carbon Intensity</h5>
+      <h5>Choose Region Data:</h5>
       <select onChange={handleChange}>
         {isLoading ? (
           <option>Loading regions...</option>
